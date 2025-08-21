@@ -12,12 +12,12 @@ This README provides complete steps to set up **kubectl** and **Minikube** on Wi
 ```bash
 # --- Install kubectl ---
 curl.exe -LO "https://dl.k8s.io/release/v1.33.0/bin/windows/amd64/kubectl.exe"
-move kubectl.exe C:\Windows\System32
+mv kubectl.exe C:\Windows\System32
 kubectl version --client
 
 # --- Install Minikube ---
 curl.exe -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-windows-amd64.exe
-move minikube-windows-amd64.exe C:\Windows\System32\minikube.exe
+mv minikube-windows-amd64.exe C:\Windows\System32\minikube.exe
 minikube version
 
 # --- Start Minikube with Docker driver ---
