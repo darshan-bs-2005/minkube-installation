@@ -21,7 +21,9 @@ mv minikube-windows-amd64.exe C:\Windows\System32\minikube.exe
 minikube version
 
 # --- Start Minikube with Docker driver ---
-minikube start --driver=docker --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
+$ minikube start --driver=docker --image-repository=registry.k8s.io
+$ minikube image load registry.k8s.io/k8s-minikube/storage-provisioner:v5
+
 kubectl get nodes --show-labels
 
 # --- Create nginx Pod (pod.yml) ---
